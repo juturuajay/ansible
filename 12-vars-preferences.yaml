@@ -3,8 +3,8 @@
   connection: local
   vars:
     GREET: "PLAY"
-  vars_files:
-    - vars.yaml
+  # vars_files:
+  #   - vars.yaml
   vars_prompt:
     - name: GREET
       prompt: Enter the value
@@ -15,3 +15,7 @@
       #   GREET: "TASK"
       ansible.builtin.debug:
         msg: "Hello from {{GREET}}"
+#1. Args will print
+#2. second local variables will print
+#3. var.yaml file variables will print
+#4.
