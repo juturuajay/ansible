@@ -19,3 +19,5 @@
 #2. second local variables will print
 #3. var.yaml file variables will print
 #4. var prompt variables will print
+#5. PLAY or Global variables will print
+
