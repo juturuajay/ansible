@@ -4,9 +4,9 @@
   vars:
     GREET: "PLAY"
   vars_files:
-  - vars.yaml
+    - vars.yaml
   vars_prompt:
-  - name: GREET
+    - name: GREET
       prompt: Enter the value
       private: false
   tasks:
