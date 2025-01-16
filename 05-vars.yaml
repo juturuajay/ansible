@@ -1,0 +1,7 @@
+- name: variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: variables from vars
+    ansible.builtin.debug:
+        msg: "Couse is Devops with AWS and duration is 120hrs, trainer is siva"
