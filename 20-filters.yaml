@@ -1,7 +1,10 @@
-- name: filters or functions
-  hosts: local
-  connection: local
-  tasks:
-  - name: filters or functions
+-name: filters or functions
+ hosts: local
+ connection: local
+ tasks:
+ - name: filters or functions
     ansible.builtin.debug:
         msg: "Hello {{ person | default('Ajay') }}"
+  # - name: converting string to list
+  #   ansible.builtin.debug:
+  #     msg
