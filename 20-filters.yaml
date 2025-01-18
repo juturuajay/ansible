@@ -1,6 +1,6 @@
 - name: filters or functions
   hosts: local
-  connections: local
+  connection: local
   tasks:
   - name: filters or functions
     ansible.builtin.debug:
