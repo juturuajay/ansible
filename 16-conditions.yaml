@@ -8,7 +8,7 @@
         state: installed
       when: ansible_os_family == "Redhat"
 
-    - name: install nginx if redhat
+    - name: install nginx if Debian
       ansible.builtin.dnf:
         name: nginx
         state: installed
