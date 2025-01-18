@@ -9,7 +9,8 @@
     vars:
       fruits: "apple, mango, orange"
     ansible.builtin.debug:
-      msg: "Fruits are | {{fruits | split(',')}}"
+      msg: "Fruits are: {{fruits | split(',')}}"
+      
   - name: converting map into list
     vars:
     course:
