@@ -10,7 +10,7 @@
     ansible.builtin.command: ls -ltr
     register: command_result
     ansible.builtin.debug:
-      msg: "{{ command_result }}"
+      msg: "Hello from {{ command_result }}"
 
   # - name: print the output
   #   ansible.builtin.debug:
