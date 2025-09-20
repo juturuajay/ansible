@@ -9,3 +9,4 @@
     - name: variables from vars
       ansible.builtin.debug:
         msg: "Couse is {{ Course }} and duration is {{Duration}}, trainer is {{Trainer}}"
+  
