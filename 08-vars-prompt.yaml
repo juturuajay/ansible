@@ -9,7 +9,7 @@
       prompt: Please enter the duration
       private: false # it is not confidential, the text is visible in prompt
     - name: Trainer
-      prompt: "Please enter the duration"
+      prompt: "Please enter the Trainer name"
       private: false # it is not confidential, the text is visible in prompt
   tasks:
     - name: variables from prompt
