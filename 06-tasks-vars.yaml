@@ -20,12 +20,16 @@
   hosts: web
   connection: local
   vars:
-    course: "Devops with AWS"  #Play level variables and it can access 
+    course: "Devops with AWS" #Play level variables and it can access
     Duration: 120HRS
     Trainer: Siva
-  tasks: 
-   - name: variables from vars
-     vars:
-       Course: ansible
-       Duration: 10hrs
-     
+  tasks:
+    - name: variables from vars
+      vars:
+        Course: ansible
+        Duration: 10hrs
+      ansible.builtin.debug:
+        msg: "Course is {{ Course }} and duration is {{Duration}}, trainer is {{Trainer}}"
+    - name: variables from vars
+      ansible.builtin.debug:
+        msg: "Course is {{ Course}} and duration is {{Duration}}, trainer is {{Trainer}}"
