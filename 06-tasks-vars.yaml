@@ -1,17 +1,31 @@
-- name: variables
-  hosts: local
+# - name: variables
+#   hosts: local
+#   connection: local
+#   vars:
+#     Course: "Devops with AWS" #Play level variables and it can access within the file, Global variable
+#     Duration: 120HRS
+#     Trainer: Siva
+#   tasks:
+#     - name: variables from vars
+#       vars:
+#         Course: ansible #task level variables and it can access within the task, local variable
+#         Duration: 10hrs
+#       ansible.builtin.debug:
+#         msg: "Couse is {{ Course }} and duration is {{Duration}}, trainer is {{Trainer}}"
+#     - name: variables from vars
+#       ansible.builtin.debug:
+#         msg: "Couse is {{ Course }} and duration is {{Duration}}, trainer is {{Trainer}}"
+
+- name: variable
+  hosts: web
   connection: local
   vars:
-    Course: "Devops with AWS" #Play level variables and it can access within the file, Global variable
+    course: "Devops with AWS"  #Play level variables and it can access 
     Duration: 120HRS
     Trainer: Siva
-  tasks:
-    - name: variables from vars
-      vars:
-        Course: ansible #task level variables and it can access within the task, local variable
-        Duration: 10hrs
-      ansible.builtin.debug:
-        msg: "Couse is {{ Course }} and duration is {{Duration}}, trainer is {{Trainer}}"
-    - name: variables from vars
-      ansible.builtin.debug:
-        msg: "Couse is {{ Course }} and duration is {{Duration}}, trainer is {{Trainer}}"
+  tasks: 
+   - name: variables from vars
+     vars:
+       Course: ansible
+       Duration: 10hrs
+     
