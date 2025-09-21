@@ -20,7 +20,7 @@
   hosts: web
   connection: local
   vars:
-    course: "Devops with AWS" #Play level variables and it can access
+    Course: "Devops with AWS" #Play level variables and it can access
     Duration: 120HRS
     Trainer: Siva
   tasks:
