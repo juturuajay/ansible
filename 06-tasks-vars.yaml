@@ -32,4 +32,4 @@
         msg: "Course is {{ Course }} and duration is {{Duration}}, trainer is {{Trainer}}"
     - name: variables from vars
       ansible.builtin.debug:
-        msg: "Course is {{ Course}} and duration is {{Duration}}, trainer is {{Trainer}}"
+        msg: "Course is {{Course}} and duration is {{Duration}}, trainer is {{Trainer}}"
