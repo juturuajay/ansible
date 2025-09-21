@@ -1,15 +1,30 @@
-- name: check if number is greater than 10 or not
+# - name: check if number is greater than 10 or not
+#   hosts: local
+#   connection: local
+#   vars:
+#     number: 15
+#   tasks:
+#     - name: given number is greater than 10
+#       ansible.builtin.debug:
+#         msg: "Given number {{number}} is greater than 10"
+#       when: number > 10
+
+#     - name: given number is less than or equalto 10
+#       ansible.builtin.debug:
+#         msg: "Given number {{number}} is less than 10"
+#       when: number <= 10
+
+- name: check if number is greater than 100
   hosts: local
   connection: local
-  vars:
-    number: 15
+  vars: 
+   number: 200
   tasks:
-    - name: given number is greater than 10
+    - name: give number is greater than 100
       ansible.builtin.debug:
-        msg: "Given number {{number}} is greater than 10"
-      when: number > 10
-
-    - name: given number is less than or equalto 10
+        msg: Given number is greater than 100
+      when: number > 100
+    - name: give number is less than 100
       ansible.builtin.debug:
-        msg: "Given number {{number}} is less than 10"
-      when: number <= 10
+        msg: Given number is less than 100
+      when: number <= 100
